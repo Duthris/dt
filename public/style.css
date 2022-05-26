@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    margin: 100px;
+    padding: 20px;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Arial',
+        'Helvetica Neue', sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+.container {
+    margin: 10px 70px 70px;
+    box-shadow: 0px 2px 50px rgba(185, 69, 189);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(185, 69, 189);
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 35px;
+    color: rgb(185, 69, 189);
+    margin: 0 0 5px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 50px 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(185, 69, 189);
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    background-color: #fafafa;
+}
+
+td,
+th {    
+    padding: 12px 15px;
+    border-radius: 12px 12px 0 0;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 120px;
+    text-overflow: ellipsis;
+}
+
+td {
+    color: rgb(96, 45, 178);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+th {
+    color: rgb(185, 69, 189);
+    border-right: solid 1px rgb(185, 69, 189); 
+    border-bottom: solid 1px rgb(185, 69, 189);
+    font-size: 21px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+tbody th:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+tbody th:nth-child(even) {
+    background-color: #fff;
+}
+
+@media(max-width: 750px) {
+    thead {
+        display: none;
+    }
+
+    table,
+    tbody,
+    tr,
+    td {
+        display: block;
+        width: 100%;
+        border: none;
+    }
+
+    tr {
+        margin-bottom: 15px;
+    }
+
+    td {
+        text-align: right;
+        padding-left: 50%;
+        text-align: right;
+        position: relative;
+    }
+
+    td::before {
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
